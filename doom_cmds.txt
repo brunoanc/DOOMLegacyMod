@@ -1,0 +1,406 @@
+aas_findArea                     teleport player to point over specified aas
+                                 area num
+aas_visCacheInfo                 shows information about the AAS visibility
+                                 cache
+aasLoad                          load a particular AAS
+aasStats                         shows AAS stats
+activateCheckPoint               triggers a checkpoint
+activateConsole                  forces the console down ( or up ) and the
+                                 desired fraction.. 0.5 is normal 0.2 is
+                                 shifted
+addarrow                         adds a debug arrow
+addClamp                         adds to a cvar, with clamping
+addLight                         adds alight with arguments use addLight
+                                 -help for details
+addline                          adds a debug line
+addsphere                        adds a debug sphere
+addWrap                          adds to a cvar, with wrapping
+ai_buildFlightMap                rebuild the current flight map with existing
+                                 volumes 
+ai_destroyEntity                 add targeted entity as a destroy relation on
+                                 all AI
+ai_forceAnim                     force debug entity to play clamped or
+                                 repeating anim state
+ai_forceFreeze                   force debug entity into / out of endless
+                                 freeze state
+ai_forceIdle                     force debug entity into endless idle state
+ai_forceMoveError                force AI to fail a move, to test recovery
+                                 ability in behavior 
+ai_forceRole                     force selected AI into group role
+ai_Hide                          hide any active AI in level
+ai_miscTest                      used for whatever 
+ai_printEntityPtrs               show total count of entity pointers in
+                                 system
+ai_printFactionTree              show faction tree topology and current data
+                                 use
+ai_printStringTokens             show contents of AI's atomic string token
+                                 tree
+ai_reloadBehaviorFSMs            flush fsm factories so decl changes can be
+                                 seen when next AI spawns
+ai_runDiagnostics                run diagnostics on all AI
+ai_ScriptCmd                     Execute a script command.
+ai_ScriptCmdEnt                  Execute a script command.
+ai_setFactionName                set faction name on selected AI or all AI if
+                                 none selected
+ai_Show                          show any hidden AI in level
+ai_startfx                       start FX condition on all spawned AI
+ai_stopfx                        stop FX condition on all spawned AI
+ai_suggestInterest               give AI a transient interest point at
+                                 reticle
+ai_teleportToPlayer              tell debug target to teleport to view origin
+ai_testPath                      test inline A* pathfind
+ai_testPath_show                 test latent A* pathfind with one expansion
+                                 per frame
+ai_tryOverrideFBG                try to play override fbg defined in 
+aiCanOnlyBeGloryKilled           Gives the player all the weapons fully
+                                 upgraded with masteries
+ArcadeMode                       sets up arcade mode scoring in sp, [0-off,
+                                 1-on]
+bcm                              build collision models for a map
+bind                             binds a command to a key
+blinkline                        blinks a debug line
+bot_add                          Spawns a bot
+bot_remove                       If clientNum passed, removes bot with that
+                                 clientNum, else removes all bots
+break                            causes a debug breakpoint
+BuildInfo                        Display relevant build information.
+BuildInfoToClipBoard             Copy build information to windows clipboard.
+buildSoundAmplitudeTable         builds wwise bank for a given map
+campaign_giveAllWeaponsAndMods   Gives the player all the weapons with mods
+                                 but not upgraded or with masteries
+campaign_giveUpgradedWeaponsAndMods Gives the player all the weapons with mods
+                                 upgraded without masteries
+cancelViewNotes                  cancels takeviewnote and deactivates the
+                                 manager if open
+centerview                       centers the view (set pitch to 0)
+clear                            clears the console
+clearDebugPoints                 empties the list of debug points
+clearHistory                     Clears the console history
+ClearHydraProfile                Clears the online saved MP data used by the
+                                 profile.
+clearLights                      clears all lights
+closeViewNotes                   close the view showing any notes for this
+                                 map
+cmap                             loads a combo map
+collisionModelInfo               shows collision model info
+compressFile                     compresses a file
+con_unwatch                      removes the specified console watch. Specify
+                                 'all' to remove all watches.
+con_watch                        adds a new console watch - displays per
+                                 frame results of console var/function
+                                 printed output
+conDump                          dumps the console text to a file
+configVersion                    just a placeholder so we can exec config
+                                 files that have versioning in them
+copy                             copy a file
+crash                            causes a crash
+cvar_restart                     restarts the cvar system, defaulting all
+                                 cvars
+cvarAdd                          adds a value to a cvar
+cvarMultiply                     multiplies a cvar by a value
+cvarRandom                       sets a cvar to a random value
+cvarsModified                    reports cvars modified since the last call
+damage                           apply damage to an entity
+decompressFile                   decompresses a file
+deleteGenerated                  deletes the generated path
+demo_nextPerspective             goes to the next viewing perspective
+demo_nextPlayer                  goes to the next player when spectating
+demo_previousPlayer              goes to the previous player when spectating
+devmap                           loads a combo map in developer mode
+dir                              lists a folder
+dirtree                          lists a folder with subfolders
+DisableAutoMapFOW                Enables cheat on AutoMap to see the entire
+                                 maps
+disconnect                       disconnects from a game
+dumpWarnings                     Dump all warnings to a text file.
+echo                             prints text
+envshot                          takes an environment shot
+error                            causes an error
+exec                             executes a config file
+exit                             exits the game
+exportCollisionModel             Writes an obj model visualizing the given
+                                 collision model
+exportDuplicateCollisionGeometryModel Writes an obj model visualizing the
+                                 duplication geometry of the given collision
+                                 model
+fastmap                          loads a map using fast non shipping render
+                                 path in developer mode
+find                             finds all system elements containing the
+                                 given search string
+freeze                           freezes the game for a number of seconds
+gameError                        causes a game error
+getviewpos                       prints the current view position
+gibalicious                      gib everything
+Give                             gives one or more items
+giveAllMaxedOutWeapons           Gives the player all the weapons fully
+                                 upgraded with masteries
+giveCheatCode                    Gives a specific cheat code
+GiveMaxedOutLoadout              gives maxedOutLoadout specified in player
+                                 def
+givePlayerAllSuitMods            Gives the player all the suit mods
+God                              enables god mode. specify the player index
+                                 for non-local players or -1 for all players
+gotoShellScreen                  Request shell go to a specific menu.
+handsPlayAdditiveAnim            cause the first person player hands to play
+                                 an additive anim
+handsTestHitReaction             play a hit reaction anim on the first person
+                                 hands
+healAI                           heals all AI in the level
+healDebugEntity                  heal debug target, including reverting gore
+history                          Displays the console command history
+hitch                            hitches the game
+infiniteHealth                   infiniteHealth for the masses!
+keepTestModel                    keeps the current testmodel around even if a
+                                 new one is spawned
+kill                             kills the player
+killAI                           kills all AI in the level
+killBreakables                   removes all breakables in the level
+killDeadAI                       kills (removes) all AI that are dead.
+killDebugTarget                  kills the current debug target
+killEntity                       removes the entity with the given name,
+                                 'kill entityname' will remove that single
+                                 entity, 'kill all entityname' removes all
+                                 entities matching the class of the given
+                                 name
+killEverything                   removes all entities besides player and
+                                 worldspawn
+killGore                         removes all gore entities in the level
+killMonsters                     removes all monsters
+killMoveables                    removes all moveables
+killPickups                      removes all pickup items
+killRagdolls                     removes all ragdolls
+killshot                         fire a shot guaranteed to kill any actor in
+                                 the player's focus
+killUnhiddenAI                   kills all AI that are not currently hidden
+                                 in the level
+leaveGame                        disconnects from a game
+listBinds                        lists key bindings
+listCmds                         lists commands
+listCollisionModels              lists collision models
+listCvars                        lists cvars
+listDecls                        lists all decls
+listImages                       lists images
+listInventory                    lists players inventory or inventory of
+                                 actor player is targeting with cursor,
+                                 optionally takes in an arguement of a
+                                 specific entity to list for
+listLines                        lists all debug lines
+listModels                       lists all models
+listspheres                      lists all debug spheres
+listVirtualTextures              lists all the referenced virtual texture
+                                 pagefile pathnames
+loadDevMenuOption                loads a map from a idDeclDevMenuList and
+                                 sublist option
+loadGame                         loads a game
+loadGameIntoMap                  loads a game
+LoadPreviousMapFromSaveGame      Restarts the previous map from the save game
+loosemap                         loads loose map
+makeDeclTree                     Generates declTree
+map                              loads a combo map
+messagemode                      displays the message dialog box
+moveTo                           tell debug target to move to location under
+                                 reticule, facing that direction
+moveToFacingPlayer               tell debug target to move to location under
+                                 reticule, facing direction of player
+moveToFacingReticule             tell debug target to move to location under
+                                 reticule, facing direction of reticule
+moveToGoalPosition               tell debug target to move to tethered goal
+                                 position under reticule
+net_remoteAvailability_PrintBestEndpoints Print the best endpoints based on what the
+                                 game has sorted.
+nextActiveAI                     move debug target to the next active (alive
+                                 and not hidden) monster
+nextAI                           move debug target to the next monster
+nextmap                          transitions to the next map, maintaining
+                                 inventory
+noClip                           noClip for the masses!
+noPlayerDeath                    noPlayerDeath for the masses!
+noPlayerKill                     noPlayerKill for the masses!
+noTarget                         noTarget for the masses!
+parse                            prints tokenized string
+path                             lists search paths
+playerTestBodyReaction           test a player body reaction
+playEvents                       playEvents <name> playback sys events F12
+                                 will stop playback
+plog_disable                     
+plog_enable                      
+plog_toggle                      
+popClosestLight                  removes the closest created light
+popDebugPoint                    removes a debug point from the list of debug
+                                 points
+popLight                         removes the last created light
+prevAI                           move debug target to the prev monster
+print                            Prints the arguments to the console
+PrintNetVersionChecksum          Display NetGetVersionChecksum value
+printVirtualMaterial             prints data on a virtual material
+printVOlog                       Show recent history of AI voice controller
+pushDebugPoint                   adds a debug point to the list of debug
+                                 points
+quit                             quits the game
+RandomizePlayerCustomization     Randomizes player's customization based on.
+randomTest                       superficial test of random number generators
+recordEvents                     recordEvents <name> start recording sys
+                                 events
+recordViewNotes                  system record the current view position with
+                                 notes
+reexportDecls                    reparses and saves decls of a specific type
+reexportEntityDefs               reparses and saves entitydef decls with a
+                                 specific classname
+reloadDecls                      reloads decl files that have changed
+reloadEntity                     reloads the specified entity
+reloadLanguage                   reload language dict
+reloadMD6Models                  reloads MD6 models
+reloadWater                      reloads all loaded dynamic water entities
+removeAI                         removes all AI in the level
+removeCheatCode                  Gives a specific cheat code
+removeInventoryItem              removes an item from players inventory or
+                                 inventory of actor player is targeting with
+                                 cursor
+removeline                       removes a debug line
+removesphere                     removes a debug sphere
+renameRenderProg                 temporarily replace a renderProg with a
+                                 different one
+reset                            resets a cvar to it's default value
+ResetProfileControllerConfig     Will exec the active config stored in the
+                                 playerProfileShell
+resetViewParms                   Resets the current view renderParms
+resourceExec                     Execute a configuration file stored in the
+                                 resource file
+RestartMap                       restarts the current map as if first time
+RestartMapAsIs                   restarts the current map
+RestartMapAtCheckPoint           restarts the current map and teleports the
+                                 player to the position indicated by the
+                                 checkpoint
+RestartMapFromLvlBackup          restarts the current map as if first time
+RestartMapFromMemoryCheckpoint   Restarts the map from the in-memory
+                                 checkpoint
+RestartMapFromSnapEditor         restarts the snap editor save and play map
+RestartMapFromStart              Restarts the map from the start of the level
+                                 for the end user
+RestartMapHere                   restarts the current map and teleports the
+                                 player back to the current position
+restartmapwithlobby              restarts the current map and brings the
+                                 current party with the host
+rp                               Displays or modifies a renderparm
+runEndOfGameCredits              Runs the end of game credits as though the
+                                 player has finished the narrative
+s_buildBankInfos                 reloads audio event data
+s_gatherActiveStates             prints out the current active states for
+                                 each state group
+s_loadBanks                      loads sound banks and reloads audio event
+                                 data, use after you regenrate sound banks
+s_reloadAudioEvents              reloads audio event data
+s_restart                        restart sound system
+s_unloadBanks                    unloads sound banks, use before you
+                                 regenerate sound banks
+s_updateVoStrings                updates the string table with current vo
+                                 events
+saveanddisconnect                saves the game and disconnects
+saveFSM                          saves out the AI's finite state machine to a
+                                 file
+saveGame                         saves a game
+saveProgression                  saves game without saving mapname or
+                                 checkpoint
+saveWeaponFSM                    saves out the AI's finite state machine to a
+                                 file
+selectDebugEntity                selects the player's focus entity as the
+                                 debug entity
+SetNetVersionChecksum            Set or reset NetGetVersionChecksum value
+setplayerviewpos                 sets the current view positon for a given
+                                 player
+setviewpos                       sets the current view position
+ShowCoopGameHelp                 Depending on game state, show appropriate in
+                                 game help (Coop only)
+showVector                       show a vector in world space, from AI origin
+showViewNotes                    show any view notes for the current map,
+                                 successive calls will cycle to the next note
+slowcombomap                     loads combo map data using the slow non
+                                 shipping render path
+slowmap                          loads a map using slow non shipping render
+                                 path in developer mode
+slowmapcheckpoint                loads a map using slow non shipping render
+                                 path in developer mode into a specific
+                                 checkpoint
+snapEdit                         DEPRECATED - this is only used by snap menus
+                                 to return to the editor from the game -
+                                 DEPRECATED
+spectator_changeLoadout          show change loadout screen
+spectator_localPerspective       goes to the perspective of the local player
+spectator_showHackModules        show hack module select screen
+StartAutomaticBackgroundSwaps    Will render a frame and start automatic
+                                 renderer swaps
+StartMapWithSaveData             Starts the map from the start of the level
+                                 for the end user with all the save slot's
+                                 progress
+StepParticleTime                 modifies a global particle 'timeline' to
+                                 debug particles in game
+stripbcm                         
+stripStrings                     strip strings containing the specified
+                                 substring or prefix
+takeViewNotes                    user record the current view position with
+                                 notes
+teleport                         teleports the player to an entity location
+teleportposition                 teleports the player to a position(X, Y, Z)
+                                 with orientation(yaw)
+testDeath                        tests death
+testFourier                      test fourier transforms
+TestFx                           tests a fx impact
+testImage                        displays the given image centered on screen
+testLCP                          test LCP solver code
+testLight                        tests a light
+testMaterialTextures             Tests image file paths in material decls.
+testmodel                        spawns a test model
+testParallelLight                tests a point light
+TestParticle                     tests a particle impact
+testPointLight                   tests a point light
+testSound                        tests a sound
+testTranslation                  fires off a reticule trace ( debugging )
+testWeapon                       test a weapon model
+toggle                           toggles a cvar
+ToggleMainMenu                   Toggle the main menu
+touchDecl                        reparses a decl
+trace                            forces a trace
+trigger                          triggers an entity
+tw_save                          writes current testweapon parameters to a
+                                 config file
+unbind                           unbinds any command from a key
+unbindAll                        unbinds any commands from all keys
+updateStringLengthFromGUIs       loads all gui decls and attempts to read any
+                                 localisation strings maximum length to
+                                 update the string table
+upgradeAmmoCapacity              Gives the max health, armor, ammo
+upgradeArmorCapacity             Gives the max health, armor, ammo
+upgradeHealthCapacity            Gives the max health, armor, ammo
+verifiedExec                     executes a verified config file
+vid_restart                      resizes/fullscreens the game window
+vstr                             inserts the current value of a cvar as
+                                 command text
+vt_benchmark                     Benchmark the virtual texture transcoding
+vt_delayedRestart                reallocates the physical images for changes
+                                 in size or compression (delayed by one frame
+                                  avoids memory spikes)
+vt_emptyCache                    empties and zeros the physical images
+vt_info                          Reports information on the current virtual
+                                 texture system
+vt_lockPages                     locks physical pages
+vt_reload                        reload all the currently loaded virtual
+                                 textures
+vt_reloadMega2Vmtrs              reloads the mega2 vmtr files from disk
+vt_restart                       reallocates the physical images for changes
+                                 in size or compression
+vt_setSource                     Explicitly change the page file for a
+                                 virtual material to compare
+vt_transcodeBenchmark            Benchmark the virtual texture transcoding
+vt_validateCache                 consistency checks the page buffers
+wait                             delays remaining buffered commands one or
+                                 more frames
+where                            prints the current view position
+writeConfig                      writes a config file
+writeDebugBinaryVirtualImages    writes out all the binary virtual images
+writeDebugLightmapImage          writes a debug image of the lightmap
+writeDebugVmtrImage              writes a debug image of the vmtr
+writeEntitiesFile                writes out a production build .entities file
+                                 for the specified map
+writeEntitiesFileWithError       writes out a production build .entities file
+                                 for the specified map
+writeImage                       Writes a tga for a given image
